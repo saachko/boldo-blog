@@ -5,7 +5,7 @@ $color-green: #65e4a3;
 $color-gray: #777777;
 
 $font-weight-regular: 400;
-$font-weight-semi-bold: 600;
+$font-weight-semibold: 600;
 $font-weight-bold: 700;
 
 $font-size-xxs: 13px;
@@ -15,8 +15,15 @@ $font-size-m: 43px;
 $font-size-xxl: 48px;
 $font-size-xxxl: 64px;
 
+$line-height-xxs: 24px;
 $line-height-xs: 28px;
 $line-height-s: 32px;
 $line-height-m: 34px;
 $line-height-xxl: 72px;
 $line-height-xxxl: 84px;
+
+$content-width: 1400px;
+
+$effects-transition: all 0.2s ease-out;
+$effects-hover-opacity: 0.6;
+$effects-active-opacity: 0.4;
