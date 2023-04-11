@@ -8,6 +8,6 @@ export default Home;
 
 export const getStaticProps: GetStaticProps = () => ({
   props: {
-    title: 'Boldo Blog',
+    title: 'Boldo | Blog',
   },
 });
