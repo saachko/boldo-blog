@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   color: $color-dark-blue;
-  border: 2px solid $color-black;
+  border: 2px solid;
   transition: $effects-transition;
 
   &:hover:enabled {
@@ -50,9 +50,11 @@
 
   &--white {
     background-color: $color-white;
+    border-color: $color-dark-blue;
   }
 
   &--green {
     background-color: $color-green;
+    border-color: $color-green;
   }
 }

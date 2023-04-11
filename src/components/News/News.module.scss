@@ -1,0 +1,54 @@
+@import 'styles/variables.scss';
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 39px;
+  padding: 0 200px;
+  margin-bottom: 124px;
+
+  & .title {
+    padding: 0 2px;
+  }
+
+  & .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+    width: 100%;
+    gap: 80px 50px;
+    margin-bottom: 56px;
+  }
+
+  & .item {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    & .info {
+      display: flex;
+      flex-direction: column;
+      flex: 100%;
+    }
+
+    & .textWrapper {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    & .text {
+      flex-grow: 1;
+      margin-bottom: 21px;
+      font-size: $font-size-s;
+      line-height: $line-height-s;
+    }
+  }
+
+  & .button {
+    align-self: center;
+  }
+}
