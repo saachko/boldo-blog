@@ -1,7 +1,13 @@
 import type { GetStaticProps } from 'next';
 
+import Intro from 'components/Intro';
+
 function Home() {
-  return <div>Home</div>;
+  return (
+    <main>
+      <Intro />
+    </main>
+  );
 }
 
 export default Home;

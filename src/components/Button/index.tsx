@@ -26,9 +26,11 @@ function Button({
   size = 'm',
   color = 'white',
   fontWeight = 'bold',
+  className,
   ...props
 }: ButtonProps) {
   const buttonClassName = cn(
+    className,
     styles.button,
     openSans.className,
     styles[`button--${size}`],
