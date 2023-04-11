@@ -1,3 +1,4 @@
+import Header from './Header';
 import Meta from './Meta';
 
 interface AppLayoutProps {
@@ -9,6 +10,7 @@ function AppLayout({ title, children }: AppLayoutProps) {
   return (
     <>
       <Meta title={title} />
+      <Header />
       {children}
     </>
   );

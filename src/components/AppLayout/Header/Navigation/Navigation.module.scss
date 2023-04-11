@@ -1,0 +1,29 @@
+@import 'styles/variables.scss';
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  margin-right: 6px;
+
+  & .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 37px;
+  }
+
+  & .item {
+    margin-left: 5px;
+  }
+
+  & .link {
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+    font-weight: $font-weight-semibold;
+    transition: $effects-transition;
+
+    &:hover {
+      opacity: $effects-hover-opacity;
+    }
+  }
+}

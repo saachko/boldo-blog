@@ -1,6 +1,10 @@
-/* eslint-disable import/prefer-default-export */
 interface DefaultPageProps {
   title: string;
 }
 
-export type { DefaultPageProps };
+interface NavigationLinkItem {
+  href: string;
+  text: string;
+}
+
+export type { DefaultPageProps, NavigationLinkItem };
