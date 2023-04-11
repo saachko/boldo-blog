@@ -21,6 +21,7 @@
     line-height: $line-height-xs;
     font-weight: $font-weight-semibold;
     transition: $effects-transition;
+    color: $color-dark-blue;
 
     &:hover {
       opacity: $effects-hover-opacity;

@@ -4,13 +4,19 @@ import cn from 'classnames';
 
 import openSans from 'utils/fonts/openSans';
 
+import { FontWeight } from 'ts/types';
+
 import styles from './Button.module.scss';
 
+type ButtonType = 'submit' | 'button' | 'reset';
+
+type ButtonSize = 'm' | 'l';
+
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  type?: 'submit' | 'button' | 'reset';
-  size?: 'm' | 'l';
+  type?: ButtonType;
+  size?: ButtonSize;
   color?: 'white' | 'green';
-  fontWeight?: 'regular' | 'semibold' | 'bold';
+  fontWeight?: FontWeight;
   children: React.ReactNode;
 }
 
