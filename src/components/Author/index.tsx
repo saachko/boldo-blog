@@ -1,15 +1,12 @@
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 
 import openSans from 'utils/fonts/openSans';
 
 import Typography from 'components/Typography';
 
-import styles from './Author.module.scss';
+import { AuthorProps } from 'ts/interfaces';
 
-interface AuthorProps {
-  image: StaticImageData;
-  name: string;
-}
+import styles from './Author.module.scss';
 
 function Author({ image, name }: AuthorProps) {
   return (
