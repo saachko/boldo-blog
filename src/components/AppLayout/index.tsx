@@ -1,3 +1,4 @@
+import Footer from './Footer';
 import Header from './Header';
 import Meta from './Meta';
 
@@ -12,6 +13,7 @@ function AppLayout({ title, children }: AppLayoutProps) {
       <Meta title={title} />
       <Header />
       {children}
+      <Footer />
     </>
   );
 }

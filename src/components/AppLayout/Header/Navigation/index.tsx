@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import cn from 'classnames';
-import { v4 } from 'uuid';
 
 import openSans from 'utils/fonts/openSans';
 
@@ -18,8 +17,8 @@ function Navigation({ navigationList }: NavigationProps) {
   return (
     <nav className={styles.navigation}>
       <ul className={styles.list}>
-        {navigationList.map(({ href, text }) => (
-          <li key={v4()} className={styles.item}>
+        {navigationList.map(({ id, href, text }) => (
+          <li key={id} className={styles.item}>
             <Link href={href} className={cn(styles.link, openSans.className)}>
               {text}
             </Link>

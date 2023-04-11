@@ -5,6 +5,7 @@ interface DefaultPageProps {
 }
 
 interface NavigationLinkItem {
+  id: string;
   href: string;
   text: string;
 }
@@ -22,4 +23,19 @@ interface NewsItem {
   author: AuthorProps;
 }
 
-export type { DefaultPageProps, NavigationLinkItem, AuthorProps, NewsItem };
+interface FooterLink extends NavigationLinkItem {
+  isHiring?: boolean;
+}
+
+interface FooterItem {
+  [key: string]: FooterLink[];
+}
+
+export type {
+  DefaultPageProps,
+  NavigationLinkItem,
+  AuthorProps,
+  NewsItem,
+  FooterLink,
+  FooterItem,
+};
