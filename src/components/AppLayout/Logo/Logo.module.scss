@@ -1,0 +1,14 @@
+@import 'styles/variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 11px;
+
+  & .logoText {
+    font-size: $font-size-m;
+    line-height: $line-height-m;
+    font-weight: $font-weight-bold;
+  }
+}
