@@ -15,9 +15,14 @@
     height: 42px;
     padding: 0 100px;
     margin-top: 56px;
+    gap: 10px;
 
-    @media (max-width: 1050px) {
+    @media (max-width: 1150px) {
       padding: 0 50px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
     }
   }
 }
