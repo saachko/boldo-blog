@@ -59,3 +59,20 @@
 .right {
   text-align: right;
 }
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: $font-size-m;
+    line-height: $line-height-ml;
+  }
+
+  .h2 {
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+  }
+
+  .h3 {
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+  }
+}

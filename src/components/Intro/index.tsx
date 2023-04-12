@@ -32,7 +32,14 @@ function Intro() {
         </Typography>
       </div>
       <div className={styles.mainContainer}>
-        <Image src={introImage} width="0" height="0" alt="intro" priority />
+        <Image
+          src={introImage}
+          width="0"
+          height="0"
+          alt="intro"
+          priority
+          className={styles.image}
+        />
         <div className={styles.wrapper}>
           <div className={styles.textWrapper}>
             <Typography

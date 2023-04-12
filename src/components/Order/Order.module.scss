@@ -17,6 +17,14 @@
     height: 100%;
     padding: 0 100px;
 
+    @media (max-width: 968px) {
+      padding: 0 50px;
+    }
+
+    @media (max-width: 700px) {
+      padding: 0 15px;
+    }
+
     & .image {
       width: 100%;
       height: auto;
@@ -51,6 +59,14 @@
       font-size: $font-size-sm;
       line-height: $line-height-sm;
       padding: 0 100px;
+
+      @media (max-width: 700px) {
+        padding: 0 30px;
+      }
+
+      @media (max-width: 420px) {
+        padding: 0 15px;
+      }
     }
   }
 
@@ -68,6 +84,10 @@
 
     & .input {
       height: 61px;
+
+      // @media (max-width: 700px) {
+      //   width: 80%;
+      // }
     }
   }
 }

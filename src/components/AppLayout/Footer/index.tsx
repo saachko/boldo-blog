@@ -24,7 +24,11 @@ function Footer() {
             Social media validation business model canvas graphical user
             interface launch party creative facebook iPad twitter.
           </Typography>
-          <Typography color="gray" className={openSans.className} align="left">
+          <Typography
+            color="gray"
+            className={cn(styles.copyright, openSans.className)}
+            align="left"
+          >
             All rights reserved.
           </Typography>
         </div>
